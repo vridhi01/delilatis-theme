@@ -1,0 +1,1 @@
+# delilatis-theme

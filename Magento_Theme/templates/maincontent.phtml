@@ -1,6 +1,17 @@
 <div class="maincontent">
  <div class="maincontentdiv1"></div>
  <div class="maincontentdiv2">
+    <div class="middlepage">
+        <h4 class="middlepagehstyle">RECOMMENDED FOR YOU</h4>
+        <p>Mauris semper vehicula luctus.Duis faucibus,ipsum vel hendreit ornare,mi </p>
+        <p>lorem sodales mi,porta maximus sapien mauris sodales mauris. Nulla facilisi</p>
+        <p>provin pulvinar lacus ex,sed commodo libero gravida et.Sed et nulla lobortis</p>
+        <p>luctus purus ac,malesuada turpis.Ut et felis ac diam imprediet pulvinar in</p>
+        <p>blandit arcu</p>
+        <div class="row">
+        <?php echo $block->getLayout()->createBlock('Mageplaza\Productslider\Block\FeaturedProducts')->setProductsCount(12)->setTemplate('Mageplaza_Productslider::productslider.phtml')->toHtml();?>
+      </div>
+    </div>
  <div class="pagebottom">
      <div class="pagebottom1">
         <div class="galleryimg1"><img src="<?php echo $this->getViewFileUrl('images/galleryimg1.png'); ?>" class="" /> </div>
@@ -24,11 +35,11 @@
     </div>
    
  </div>
+
+</div>
  <div class="bootomicon">
     <div class="arrowimg"><img src="<?php echo $this->getViewFileUrl('images/arrowimg.png'); ?>" class="" /> </div>
     <div class="arrowimg"><p>To the top</p></div>
     </div>
- 
  </div>
  
-</div>

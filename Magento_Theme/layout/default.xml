@@ -109,6 +109,7 @@
         <referenceBlock name="copyright" remove="true"/>
         <referenceBlock name="report.bugs" remove="true"/>
 
+
         <referenceContainer name="main">
            <block class="Magento\Framework\View\Element\Html\Link\Current" name="maincontent" template="Magento_Theme::maincontent.phtml"/>
         </referenceContainer>

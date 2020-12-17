@@ -4,9 +4,7 @@
     <referenceBlock name="wish-list-link" remove="true" />
     <referenceBlock name="my-account-link" remove="true" />
     <referenceBlock name="authorization-link" remove="true" />
-    
-    
-      <referenceBlock name="top.links">
+    <referenceBlock name="top.links">
             <block class="Magento\Framework\View\Element\Html\Link" name="Aboutus">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">About Us</argument>
@@ -112,6 +110,12 @@
 
         <referenceContainer name="main">
            <block class="Magento\Framework\View\Element\Html\Link\Current" name="maincontent" template="Magento_Theme::maincontent.phtml"/>
+        </referenceContainer>
+
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+        <referenceContainer name="div.sidebar.additional">
+           <block class="Magento\Framework\View\Element\Html\Link\Current" name="sidebarcontent" template="Magento_Theme::sidebarcontent.phtml"/>
         </referenceContainer>
    </body>
 </page>

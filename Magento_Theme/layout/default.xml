@@ -1,0 +1,121 @@
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+ <body>
+    <referenceBlock name="register-link" remove="true" />
+    <referenceBlock name="wish-list-link" remove="true" />
+    <referenceBlock name="my-account-link" remove="true" />
+    <referenceBlock name="authorization-link" remove="true" />
+    <referenceBlock name="top.links">
+            <block class="Magento\Framework\View\Element\Html\Link" name="Aboutus">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">About Us</argument>
+                    <argument name="path" xsi:type="string" translate="true">Aboutus</argument>
+                    <argument name="class" xsi:type="string" translate="true">Aboutus</argument>
+                </arguments>
+            </block>
+
+              <block class="Magento\Framework\View\Element\Html\Link" name="Help">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Help</argument>
+                    <argument name="path" xsi:type="string" translate="true">Help</argument>
+                    <argument name="class" xsi:type="string" translate="true">Help</argument>
+                </arguments>
+            </block>
+              <block class="Magento\Framework\View\Element\Html\Link" name="Contactus">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Contact Us</argument>
+                    <argument name="path" xsi:type="string" translate="true">contact</argument>
+                    <argument name="class" xsi:type="string" translate="true">Contact</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="Signin">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sign In</argument>
+                    <argument name="path" xsi:type="string" translate="true">customer/account/login/referer/aHR0cDovL2Rldi5tYWdlbnRvLnhtYWdlc3RvcmUuY29tL21hZ2VudG8yL3ZyaWRoaW1hZ2VudG8vZW4v/</argument>
+                    <argument name="class" xsi:type="string" translate="true">signin</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <move element="minicart" destination="header.panel" before="top.links"/>
+        <move element="page.top" destination="header-wrapper" />
+        <referenceBlock name="logo">  
+                <arguments>
+                    <argument name="logo_img_width" xsi:type="number">188</argument>
+                    <argument name="logo_img_height" xsi:type="number">108</argument>
+                    <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                    <argument name="class" xsi:type="string" translate="true">logoimg</argument>
+                </arguments>
+        </referenceBlock>
+        
+           <referenceBlock name="privacy-policy-link" remove="true"/>
+           <referenceBlock name="search-term-popular-link" remove="true"/>
+           <referenceBlock name="contact-us-link" remove="true"/>
+           <referenceBlock name="catalog-search-advanced-link" remove="true"/>
+           <referenceBlock name="sales-guest-form-link" remove="true"/>
+        
+        <referenceContainer name="footer">
+           <block class="Magento\Framework\View\Element\Html\Link\Current" name="footericons" template="Magento_Theme::footericons.phtml" before="footer_links"/>
+           <referenceBlock name="footer_links">
+            <block class="Magento\Framework\View\Element\Html\Link" name="About">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">About Us</argument>
+                    <argument name="path" xsi:type="string" translate="true">Aboutus</argument>
+                    <argument name="class" xsi:type="string" translate="true">footerlink</argument>
+                </arguments>
+            </block>
+
+              <block class="Magento\Framework\View\Element\Html\Link" name="order">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">How to Order</argument>
+                    <argument name="path" xsi:type="string" translate="true">order</argument>
+                    <argument name="class" xsi:type="string" translate="true">footerlink</argument>
+                </arguments>
+            </block>
+              <block class="Magento\Framework\View\Element\Html\Link" name="Contact">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Contact Us</argument>
+                    <argument name="path" xsi:type="string" translate="true">contact</argument>
+                    <argument name="class" xsi:type="string" translate="true">footerlink</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="Sign">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sign In</argument>
+                    <argument name="path" xsi:type="string" translate="true">customer/account/login/referer/aHR0cDovL2Rldi5tYWdlbnRvLnhtYWdlc3RvcmUuY29tL21hZ2VudG8yL3ZyaWRoaW1hZ2VudG8vZW4v/</argument>
+                    <argument name="class" xsi:type="string" translate="true">footerlink</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="terms">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Terms</argument>
+                    <argument name="path" xsi:type="string" translate="true">terms</argument>
+                    <argument name="class" xsi:type="string" translate="true">footerlink</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="faq">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">FAQ</argument>
+                    <argument name="path" xsi:type="string" translate="true">faq</argument>
+                    <argument name="class" xsi:type="string" translate="true">footerlink</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+         </referenceContainer>   
+
+      <referenceContainer name="before.body.end">
+           <block class="Magento\Framework\View\Element\Html\Link\Current" name="copyrightdiv" template="Magento_Theme::coprightdiv.phtml"/>
+        </referenceContainer>
+        <referenceBlock name="copyright" remove="true"/>
+        <referenceBlock name="report.bugs" remove="true"/>
+
+
+        <referenceContainer name="main">
+           <block class="Magento\Framework\View\Element\Html\Link\Current" name="maincontent" template="Magento_Theme::maincontent.phtml"/>
+        </referenceContainer>
+
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+        <referenceContainer name="div.sidebar.additional">
+           <block class="Magento\Framework\View\Element\Html\Link\Current" name="sidebarcontent" template="Magento_Theme::sidebarcontent.phtml"/>
+        </referenceContainer>
+   </body>
+</page>

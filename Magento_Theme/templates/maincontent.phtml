@@ -1,0 +1,64 @@
+<div class="maincontent">
+ <div class="maincontentdiv1"></div>
+ <div class="maincontentdiv2">
+    <div class="middlepage1">
+       <div class="innermiddlepage1">
+          <p class="innermiddlepageparagraph">Food/Party food and platters/Sandwiches,Rolls and Wraps</p>
+       </div>
+       <div class="inermiddlepage2">
+          <div class="optionsinnermiddlepage">Category 3 <img src="<?php echo $this->getViewFileUrl('images/cancelbutton.png'); ?>" class="cancelimg" /> </div>
+          <div class="optionsinnermiddlepage">Lead Time: Option1 <img src="<?php echo $this->getViewFileUrl('images/cancelbutton.png'); ?>" class="cancelimg" />  </div>
+          <div class="optionsinnermiddlepage">Dietary Requirements:Option1 <img src="<?php echo $this->getViewFileUrl('images/cancelbutton.png'); ?>" class="cancelimg" /> </div>
+          <div class="optionsinnermiddlepage">Price & Rating:Option1 <img src="<?php echo $this->getViewFileUrl('images/cancelbutton.png'); ?>" class="cancelimg" /> </div>
+          <div class="optionsinnermiddlepage">Type of Dish:Option1 <img src="<?php echo $this->getViewFileUrl('images/cancelbutton.png'); ?>" class="cancelimg" /> </div>
+          <div class="optionsinnermiddlepage">Preparation Requirements:Option1 <img src="<?php echo $this->getViewFileUrl('images/cancelbutton.png'); ?>" class="cancelimg" /> </div>
+          <div class="optionsinnermiddlepage">Serving Size:Option1 <img src="<?php echo $this->getViewFileUrl('images/cancelbutton.png'); ?>" class="cancelimg" /> </div>
+       </div>
+    </div>
+    <div class="productsortdiv">
+      <div class="clearallfilterdiv"><p class="itemfound">12 items found.<span class="clearallfilterspan">Clear all filters</span></p></div>
+      <div class="inputsortby">
+         <select name="selectsortby" id="selectsortby">
+               <option value="bestseller"><span class="sortby">Sort by:</span> Best Sellers</option>
+               <option value="price"><span class="sortby">Sort by:</span> Rating</option>
+               <option value="price"><span class="sortby">Sort by:</span> Price</option>
+               <option value="name"><span class="sortby">Sort by:</span> Name</option>
+         </select>
+      </div>
+    </div>
+ <?php echo $block->getLayout()->createBlock('Product\Lists\Block\Widget\ProductList')->setQty(3)->toHtml();?>
+  <div class="pageimgs">
+  <img src="<?php echo $this->getViewFileUrl('images/pageimg.png'); ?>" class="pageimg" /> 
+  </div>
+    <div class="middlepage">
+       <div class="middlepagediv1">
+            <h4 class="middlepagehstyle">RECOMMENDED FOR YOU</h4>
+            <p>Mauris semper vehicula luctus.Duis faucibus,ipsum vel hendreit ornare,mi </p>
+            <p>lorem sodales mi,porta maximus sapien mauris sodales mauris. Nulla facilisi</p>
+            <p>provin pulvinar lacus ex,sed commodo libero gravida et.Sed et nulla lobortis</p>
+            <p>luctus purus ac,malesuada turpis.Ut et felis ac diam imprediet pulvinar in</p>
+            <p>blandit arcu</p>
+        </div>
+       
+        <div class="middlepagediv2">
+        <?php echo $block->getLayout()->createBlock('Mageplaza\Productslider\Block\FeaturedProducts')->setProductsCount(12)->setTemplate('Mageplaza_Productslider::productslider.phtml')->toHtml();?>
+         </div>
+    </div>
+ <div class="pagebottom">
+     <div class="pagebottom1">
+     <?php echo $block->getLayout()->createBlock('Mageplaza\InstagramFeed\Block\Widget')->toHtml();?>
+    </div>
+    <div class="bottomtext">
+        <p class="bottomparagraph">"Macroons are to die for and I got a free extra one in my order.It's the best <span class="botomspan">Macroons in Baharin! Yummy!"</span></p>
+        <h4 class="bottomheading">Jassin Mohammed</h4>
+    </div>
+   
+ </div>
+
+</div>
+ <div class="bootomicon">
+    <div class="arrowimg"><img src="<?php echo $this->getViewFileUrl('images/arrowimg.png'); ?>" class="" /> </div>
+    <div class="textothetop"><p>To the top</p></div>
+    </div>
+ </div>
+ 
